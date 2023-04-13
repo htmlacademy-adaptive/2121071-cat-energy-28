@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+  <base href="https://htmlacademy-adaptive.github.io/2121071-cat-energy-28/2/">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo logo" href="">
+      <img src="source/img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи">
+      <img src="source/img/company-name-mobile.svg" width="101" height="18" alt="Кэт энерджи">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <h1>Подбор программы</h1>
+    <h3>Заполните анкету, и мы подберем<br>
+      программу питания для вашего кота</h3>
+    <section class="">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required minlength="" maxlength="" size="">
+      <label for="name">вес(кг):</label>
+      <input type="text" id="name" name="name" required minlength="" maxlength="" size="">
+      <label for="name">возраст(лет):</label>
+      <input type="text" id="name" name="name" required minlength="" maxlength="" size="">
+    </section>
+
+    <section class="radiobuttons">
+      <input type="radio" id="Choice1" name="" value="">
+      <label for="Choice1">Похудение</label>
+
+      <input type="radio" id="Choice2" name="" value="">
+      <label for="Choice2">Набор массы</label>
+
+      <input type="radio" id="Choice3" name="" value="">
+      <label for="Choice3">Не знаю (нужен ваш совет)</label>
+
+    </section>
+
+    <h2>Контактные данные (владельца кота)</h2>
+
+    <section>
+      <label for="e-mail">e-mail:*</label>
+      <input type="email" id="e-mail" name="e-mail" required placeholder="кuklachev@gmail.com" minlength="" maxlength=""
+        size="">
+      <label for="tel">Телефон:*</label>
+      <input type="tel" id="tel" name="tel" required placeholder="8 (960) 900-60-90" minlength="" maxlength="" size="">
+    </section>
+
+
+    <h2>Комментарий</h2>
+
+    <section>
+      <label for="name">возраст(лет):</label>
+      <input type="text" id="name" name="name" required placeholder="Расскажите обо всех повадках кота" minlength=""
+        maxlength="" size="">
+    </section>
+
+    <h2>Дополнительно</h2>
+
+    <section>
+      <div class="add">
+        <input type="add" id="add" name="add" checked>
+        <label for="add">Сахарозаменитель</label>
+        <input type="add" id="add" name="add" checked>
+        <label for="add">Питьевая вода</label>
+        <input type="add" id="add" name="add" checked>
+        <label for="add">Молоко</label>
+        <input type="add" id="add" name="add" checked>
+        <label for="add">Витамины</label>
+      </div>
+
+      <div>
+
+        <button>отправить заявку</button>
+        <p>* — Обязательные поля</p>
+
+      </div>
+    </section>
