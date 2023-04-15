@@ -6,7 +6,7 @@
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="main-header">
     <a class="main-header__logo logo" href="">
       <img src="source/img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи">
@@ -18,19 +18,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="">
-              Главная
-            </a>
+            <a href="">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="">
-              Каталог продукции
-            </a>
+            <a href="">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="">
-              Подбор программы
-            </a>
+            <a href="">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -38,67 +32,102 @@
   </header>
 
   <main class="main-container">
-    <h1>Подбор программы</h1>
-    <h3>Заполните анкету, и мы подберем<br>
+    <h1 class="main-container__title">Подбор программы</h1>
+    <h3 class="main-container__subtitle">Заполните анкету, и мы подберем<br>
       программу питания для вашего кота</h3>
-    <section class="">
+    <section class="about">
       <label for="name">Имя:</label>
-      <input type="text" id="name" name="name" required minlength="" maxlength="" size="">
+      <input class="about__input--name" type="text"  required>
       <label for="name">вес(кг):</label>
-      <input type="text" id="name" name="name" required minlength="" maxlength="" size="">
+      <input  class="about__input--weight" type="text"  required>
       <label for="name">возраст(лет):</label>
-      <input type="text" id="name" name="name" required minlength="" maxlength="" size="">
+      <input class="about__input--age" type="text" required>
     </section>
 
     <section class="radiobuttons">
-      <input type="radio" id="Choice1" name="" value="">
+      <input class="radiobuttons__input--first" type="radio"   value="">
       <label for="Choice1">Похудение</label>
 
-      <input type="radio" id="Choice2" name="" value="">
-      <label for="Choice2">Набор массы</label>
+      <input class="radiobuttons__input--second" type="radio" value="">
+      <label  for="Choice2">Набор массы</label>
 
-      <input type="radio" id="Choice3" name="" value="">
+      <input class="radiobuttons__input--third" type="radio" value="">
       <label for="Choice3">Не знаю (нужен ваш совет)</label>
 
     </section>
 
-    <h2>Контактные данные (владельца кота)</h2>
+    <h2 class="form-title">Контактные данные (владельца кота)</h2>
 
-    <section>
+    <section class="mail">
       <label for="e-mail">e-mail:*</label>
-      <input type="email" id="e-mail" name="e-mail" required placeholder="кuklachev@gmail.com" minlength="" maxlength=""
-        size="">
+      <input type="mail__input" id="e-mail" name="e-mail" required placeholder="кuklachev@gmail.com">
       <label for="tel">Телефон:*</label>
-      <input type="tel" id="tel" name="tel" required placeholder="8 (960) 900-60-90" minlength="" maxlength="" size="">
+      <input type="mail__tel" id="tel" name="tel" required placeholder="8 (960) 900-60-90">
     </section>
 
 
-    <h2>Комментарий</h2>
+    <h2 class="form-title">Комментарий</h2>
 
-    <section>
+    <section class="comment">
       <label for="name">возраст(лет):</label>
-      <input type="text" id="name" name="name" required placeholder="Расскажите обо всех повадках кота" minlength=""
-        maxlength="" size="">
+      <input class="comment__about" type="text" id="name" name="name" required
+      placeholder="Расскажите обо всех повадках кота">
     </section>
 
-    <h2>Дополнительно</h2>
+    <h2 class="form-title">Дополнительно</h2>
 
-    <section>
-      <div class="add">
-        <input type="add" id="add" name="add" checked>
+    <section class="add">
+      <div class="add__prod">
+        <input  class="add__product" type=""  name="Сахарозаменитель" checked>
         <label for="add">Сахарозаменитель</label>
-        <input type="add" id="add" name="add" checked>
+        <input class="add__product" type=""  name="Питьевая вода" checked>
         <label for="add">Питьевая вода</label>
-        <input type="add" id="add" name="add" checked>
+        <input class="add__product" type=""  name="Молоко" checked>
         <label for="add">Молоко</label>
-        <input type="add" id="add" name="add" checked>
+        <input class="add__product" type=""  name="Витамины" checked>
         <label for="add">Витамины</label>
-      </div>
 
-      <div>
-
-        <button>отправить заявку</button>
-        <p>* — Обязательные поля</p>
+        <button class="add__button">отправить заявку</button>
+        <p class="add__text">* — Обязательные поля</p>
 
       </div>
     </section>
+  </main>
+  <footer class="main-footer">
+    <section class="location">
+      <div class="location__wrapper">
+        <b class="location__welcome">приглашаем<br>к сотрудничеству<br>дилеров!</b>
+        <p class="location__adress">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <iframe class="location__map" src="https://yandex.ru/maps/" frameborder="0" width="320 height362"></iframe>
+      </div>
+    </section>
+    <div class="footer-logo">
+      <div class="footer-logo__icon">
+        <a class="footer-logo__link" href=""></a>
+        <img src="source/img/company-name-mobile.svg" alt="кет энерджи">
+      </div>
+      <div class="footer-social">
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a class="footer-social footer-social--vk" href="https://vk.com/htmlacademy">вк</a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social footer-social--yt" href="https://www.youtube.com/user/htmlacademyru">ют</a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social footer-social--tg" href="https://t.me/htmlacademy">тг</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="main-footer__copyright"></div>
+      <a href="https://htmlacademy.ru"></a>
+      <img src="" alt="Логотип htmlacademy.ru">
+
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
